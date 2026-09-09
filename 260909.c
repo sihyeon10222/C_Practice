@@ -59,7 +59,7 @@ int main(void) {
     // 교재 연습문제 4장 9번
     int n = 1;
     char ch = n2c(n);
-    printf("%c %c %c\n", n2c(n), n2c(n+1), n2c(n+2));
+    printf("%c %c %c\n", ch, ch(n+1), ch(n+2));
 
 
     // 교재 연습문제 4장 10번
@@ -95,7 +95,7 @@ double compute_kenerge(double mass, double speed) {
 
 // 숫자를 문자로 변환
 char n2c(int n) {
-    return A+n;료
+    return A+n;
 }
 
 
@@ -103,5 +103,3 @@ char n2c(int n) {
 void alarm_fire(void) {
     printf("화재가 발생하였습니다. %c\n", '\a');
 }
-
-//수정 확인22222
