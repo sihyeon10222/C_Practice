@@ -95,7 +95,7 @@ double compute_kenerge(double mass, double speed) {
 
 // 숫자를 문자로 변환
 char n2c(int n) {
-    return A+n;
+    return A+n;료
 }
 
 
@@ -103,3 +103,5 @@ char n2c(int n) {
 void alarm_fire(void) {
     printf("화재가 발생하였습니다. %c\n", '\a');
 }
+
+//수정 확인
