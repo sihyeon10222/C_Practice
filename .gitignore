@@ -1,0 +1,22 @@
+# CLion
+.idea/
+cmake-build-*/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Visual Studio
+.vs/
+Debug/
+Release/
+x64/
+x86/
+out/
+
+# Compiled files
+*.exe
+*.obj
+*.o
