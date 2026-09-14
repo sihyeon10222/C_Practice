@@ -3,6 +3,7 @@
 #define _CRT_NONSTDC_NO_DEPRECATE
 #define PYEONG_RATE 3.3058
 #define A 'a'
+#define HALF 0.5
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,7 +16,7 @@
 double compute_volume(double length, double width, double height);
 float pyeong_to_meter2(int pyeong);
 float add_float2(float f1, float f2);
-double compute_kenerge(double mass, double speed);
+double compute_kenerge(double mass, double speed);     
 void alarm_fire(void);
 char n2c(int n);
 
@@ -59,7 +60,7 @@ int main(void) {
     // 교재 연습문제 4장 9번
     int n = 1;
     char ch = n2c(n);
-    printf("%c %c %c\n", ch, ch(n+1), ch(n+2));
+    printf("%c %c %c\n", ch, n2c(n+1), n2c(n+2));
 
 
     // 교재 연습문제 4장 10번
@@ -89,7 +90,7 @@ float add_float2(float f1, float f2) {
 
 // 운동에너지 계산
 double compute_kenerge(double mass, double speed) {
-    return 0.5 * mass * speed * speed;
+    return HALF * mass * speed * speed;
 }
 
 
