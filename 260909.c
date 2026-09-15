@@ -45,7 +45,7 @@ int main(void) {
 
     float f3 = add_float2(f1, f2);
 
-    printf("(%E, %F) = %f\n", f1, f2, f3);
+    printf("(%E, %E) = %f\n", f1, f2, f3);
 
 
     // 교재 연습문제 4장 7번
