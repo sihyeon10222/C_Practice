@@ -7,7 +7,6 @@
 #include <math.h>
 #include <tgmath.h>
 
-
 #define NO_ROOT 0
 #define YES_ROOT 1
 
