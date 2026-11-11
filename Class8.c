@@ -1,5 +1,5 @@
 #include <ctype.h>
-#include "company.h"
+#include "company2.h"
 
 int binary_search(const char* name, COMPANY companies[], int count);
 
