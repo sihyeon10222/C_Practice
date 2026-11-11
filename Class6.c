@@ -39,7 +39,33 @@ int main() {
 
 //배열 정렬기
 int merge(int *AA, int s1, int *BB, int s2, int *CC, int s3) {
+    int i = 0, j = 0, k = 0;
 
+    while (i < s1 && j < s2) {
+        if (AA[i] < BB[j]) {
+            CC[k] = AA[i];
+            i++;
+        }
+        else {
+            CC[k] = BB[j];
+            j++;
+        }
+        k++;
+    }
+
+    while (i < s1) {
+        CC[k] = AA[i];
+        i++;
+        k++;
+    }
+
+    while (j < s2) {
+        CC[k] = BB[j];
+        j++;
+        k++;
+    }
+
+    return k;
 }
 
 //문자열의 길이를 구한다.
@@ -52,15 +78,9 @@ int my_strlen(char str[]) {
 
 //문자열 배열에 여러 자료형을 쓰고 읽는다.
 void get_types(char *c, int *i, float *f) {
-    char buf[BUFSIZ];
-    //문자열에 여러 자료형을 쓰기
-    char *pc = &buf[0];     *pc = 'a';
-    int *pi = &buf[1];      *pi = 100;
-    float *pf = &buf[5];    *pf = 3.14F;
-    //읽기
-    *c = *pc;
-    *i = *pi;
-    *f = *pf;
+    *c = 'a';
+    *i = 100;
+    *f = 3.14;
 }
 
 //최대값이 들어있는 원소의 주소를 구한다.

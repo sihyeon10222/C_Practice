@@ -10,5 +10,6 @@ file(GLOB PRACTICE_FILES CONFIGURE_DEPENDS "*.c")
 foreach(source_file ${PRACTICE_FILES})
     get_filename_component(file_name ${source_file} NAME_WE)
 
-    add_executable(practice_${file_name} ${source_file})
+    add_executable(practice_${file_name} ${source_file}
+            company.h)
 endforeach()
