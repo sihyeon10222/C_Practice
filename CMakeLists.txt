@@ -9,7 +9,8 @@ file(GLOB PRACTICE_FILES CONFIGURE_DEPENDS "*.c")
 list(REMOVE_ITEM PRACTICE_FILES
         ${CMAKE_CURRENT_SOURCE_DIR}/Class9.c
         ${CMAKE_CURRENT_SOURCE_DIR}/company.c
-        ${CMAKE_CURRENT_SOURCE_DIR}/Class10_hangul.c)
+        ${CMAKE_CURRENT_SOURCE_DIR}/Class10_hangul.c
+        ${CMAKE_CURRENT_SOURCE_DIR}/Class11_hangul.c)
 
 foreach(source_file ${PRACTICE_FILES})
     get_filename_component(file_name ${source_file} NAME_WE)
@@ -18,5 +19,6 @@ foreach(source_file ${PRACTICE_FILES})
 endforeach()
 
 target_sources(practice_Class10 PRIVATE Class10_hangul.c)
+target_sources(practice_Class11 PRIVATE Class11_hangul.c)
 
 add_executable(practice_Class9 Class9.c company.c company.h)
